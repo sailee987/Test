@@ -1,6 +1,8 @@
-
-In the optimize solution,the first element is stored in a variable,which is compared with every other element inside a loop.
-If any element is found to be greater,it is assigned to the largest variable. It's time complexity reduces to o(n).
-The same problem can be solved by Brute force technique,which sorts the array in ascending order. 
-The largest number is fetched by the element at the last index position. 
-But its time complexity is o(nlog(n)).
+1. Set largest = arr[0]
+2. Loop through the array
+3. If arr[i] > largest, update largest
+4. Print largest
+The above optimal solution's time complexity reduces to o(n) and space complexity to o(1).
+However,itcan be solved by Brute force technique,which sorts the array in ascending order. 
+The element at the last index position is the largest number. 
+But its time complexity is o(nlog(n)) and space complexity is o(1), which is inefficient.
