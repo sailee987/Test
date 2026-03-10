@@ -30,7 +30,7 @@ public class RemoveDuplicatesfromSortedArray {
 				arr[i+1]=arr[j];
 				i++;
 			}
-			j++;
+			
 		}
 		return (i+1);
 	}
