@@ -20,7 +20,10 @@ public class LargestIntegerProblem {
 		      return largest;
 		    }
 		
-
+		 // This will throw a NoSuchElementException if the array is empty
+			/*
+			 * int max = Arrays.stream(numbers) .max() .orElseThrow();
+			 */
 	
 
 }
