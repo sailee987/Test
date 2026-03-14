@@ -30,7 +30,7 @@ public class IsArraySorted_Rotated {
         for (int i = 0; i < n; i++) {
             // Check if the current element is greater than
             // the next element
-            if (arr[i] > arr[(i + 1) % n]) {
+            if (arr[i] > arr[(i + 1) % n]) { 
                 // Increment count if the sequence is out of
                 // order
                 count++;

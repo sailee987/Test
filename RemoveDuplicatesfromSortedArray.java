@@ -7,7 +7,7 @@ public class RemoveDuplicatesfromSortedArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr= {1,2,1,2,2,3,3,3,4};
+		int[] arr= {1,1,2};
 		
 		System.out.println("Number of unique elements in the set "+removeDuplicates(arr));
 
@@ -22,17 +22,17 @@ public class RemoveDuplicatesfromSortedArray {
 	//Optimal solution by using two pointers approach
 	private static int removeDuplicates(int[] arr)
 	{
-		int i=0;
-		for(int j=1;j<arr.length;j++)
+		int uniqueelement=0; //1,1,2
+		for(int i=1;i<arr.length;i++) //no swapping,traversing from 1, First element is already unique, so scanning starts from the second element.”
 		{
-			if(arr[i]!=arr[j])
+			if(arr[i]!=arr[uniqueelement])
 			{
-				arr[i+1]=arr[j];
-				i++;
+				arr[uniqueelement+1]=arr[i];
+				uniqueelement++;
 			}
-			j++;
+			
 		}
-		return (i+1);
+		return (uniqueelement+1);
 	}
 	
 
