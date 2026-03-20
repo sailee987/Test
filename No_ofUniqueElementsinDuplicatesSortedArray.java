@@ -3,7 +3,7 @@ package com.test;
 import java.util.HashSet;
 import java.util.Set;
 
-public class RemoveDuplicatesfromSortedArray {
+public class No_ofUniqueElementsinDuplicatesSortedArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -32,6 +32,7 @@ public class RemoveDuplicatesfromSortedArray {
 			}
 			
 		}
+		
 		return (uniqueelement+1);
 	}
 	
